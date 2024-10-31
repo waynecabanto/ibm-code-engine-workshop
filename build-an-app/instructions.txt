@@ -1,0 +1,16 @@
+1. From the Code Engine Overview page, go to `Image Builds`.
+2. Click the `Image build` tab.
+3. Click `Create`.
+4. Give your build a name. For example, `python-app-wayne-build`.
+5. Copy the repository `https://github.com/waynecabanto/ibm-code-engine-workshop.git` and paste it on the `Code repo URL` field. 
+6. Leave the SSH secret to `None` since the repository we are building from is Public. In the case of a private repository, you would need to configure the SSH. 
+7. For branch name, write `main`.
+8. For context directory, point to the directory where the app resides which is, in this case, `python-app`.
+9. Click Next.
+10. Leave the strategy as is. Click Next.
+11. If the "Could not find a container registry reference" box appears, click the `Add button`. Change the secret name, paste your API KEY, click `Create`.
+12. On the namespace field, write `ce-workshop-images`.
+13. On the repositry field, write `ce-workshop-<your name>`.
+14. On the tag field, write `1`. 
+15. Click create. 
+16. On the build runs area, click `Create` to create a build run instance. Then click `Submit build`. This will automatically build the app for you and save the image to the image repository.

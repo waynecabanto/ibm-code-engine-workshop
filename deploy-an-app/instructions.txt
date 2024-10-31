@@ -1,0 +1,10 @@
+1. From the Code Engine Overview, click `Applications`. 
+2. Then click `Create`.
+3. When in the form, change the application to `<your name>-python-app`.
+4. Select `Use an existing container image` because we want to use the image we just built. 
+5. Click `Configure image` button. 
+6. Select the secret you created before in the build process.
+7. Select the `ce-workshop-images` as namespace.
+8. Select the image you just build on the Repository dropdown.
+9. Write `1` as the tag or the tag you assigned to it when you built the image. Click `Done`.
+10. Leave the rest as is. Click `Create` to create your code engine application. 
